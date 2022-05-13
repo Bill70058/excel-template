@@ -1,17 +1,26 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <img alt="Vue logo"
+         src="./assets/logo.png">
+    <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
+    <div style="width:500px; display:flex;margin:0 auto;justify-content:space-between;">
+      <upload-excel></upload-excel>
+      <down-excel></down-excel>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import DownExcel from './components/downExcel.vue'
+import UploadExcel from './components/uploadExcel.vue'
+// import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    // HelloWorld
+    UploadExcel,
+    DownExcel
   }
 }
 </script>
